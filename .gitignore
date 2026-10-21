@@ -1,0 +1,11 @@
+# Raw backups and heavy media
+_raw_originals/
+*.mp4
+assets/projects/unearthed-sculptural-entrance/handvideo.mp4
+
+# Editor & system files
+.gemini/
+.DS_Store
+Thumbs.db
+
+

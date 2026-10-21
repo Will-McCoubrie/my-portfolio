@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#302219">
+  <meta name="description" content="Explore the workbench of Will McCoubrie, designer, builder and maker.">
+  <title>The Workbench — Will McCoubrie</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bench-page">
+  <main class="bench-viewport" id="workbench" aria-label="Interactive workbench. Choose an object to explore its projects.">
+    <div class="bench-stage">
+      <img class="bench-photo" src="assets/bench-large.webp"
+           srcset="assets/bench-small.webp 900w, assets/bench-medium.webp 1280w, assets/bench-large.webp 1672w"
+           sizes="(max-width: 800px) 1450px, 100vw" width="1672" height="941"
+           alt="Overhead photograph of an old workshop bench with blueprints, timber, metal, colour samples, experiments and a photo." draggable="false">
+
+      <!-- The clickable regions are links, not JavaScript buttons. Their coordinates match the photo. -->
+      <a class="hotspot hotspot-digital" href="#digital" aria-label="Explore digital projects">
+        <span class="hotspot-label">Digital <span>↗</span></span><span class="hotspot-dot" aria-hidden="true">+</span>
+      </a>
+      <a class="hotspot hotspot-timber" href="#timber" aria-label="Explore timber projects">
+        <span class="hotspot-label">Timber <span>↗</span></span><span class="hotspot-dot" aria-hidden="true">+</span>
+      </a>
+      <a class="hotspot hotspot-metal" href="#metal" aria-label="Explore metal projects">
+        <span class="hotspot-label">Metal <span>↗</span></span><span class="hotspot-dot" aria-hidden="true">+</span>
+      </a>
+      <a class="hotspot hotspot-design" href="#design" aria-label="Explore design projects">
+        <span class="hotspot-label">Design <span>↗</span></span><span class="hotspot-dot" aria-hidden="true">+</span>
+      </a>
+      <a class="hotspot hotspot-experiments" href="#experiments" aria-label="Explore experiments">
+        <span class="hotspot-label">Experiments <span>↗</span></span><span class="hotspot-dot" aria-hidden="true">+</span>
+      </a>
+      <a class="hotspot hotspot-maker" href="maker.html" aria-label="About the maker and contact">
+        <span class="hotspot-label">The Maker <span>↗</span></span><span class="hotspot-dot" aria-hidden="true">+</span>
+      </a>
+    </div>
+  </main>
+  <div class="bench-hint" aria-hidden="true">SWIPE TO EXPLORE <span>↔</span></div>
+
+  <!-- The paper sheets open with CSS :target (no JavaScript). Each project is a separate HTML page.
+       For new projects, add a link in the appropriate section below. -->
+  <section class="project-sheet" id="digital" aria-labelledby="digital-title">
+    <a class="sheet-backdrop" href="#workbench" aria-label="Close Digital projects"></a>
+    <div class="sheet-paper">
+      <a href="#workbench" class="sheet-close" aria-label="Close Digital projects">×</a>
+      <p class="sheet-eyebrow">FROM THE WORKBENCH / 01</p>
+      <h2 id="digital-title">Digital</h2>
+      <p class="sheet-subtitle">Select a piece to explore.</p>
+      <nav class="sheet-list" aria-label="Digital projects">
+        <p class="sheet-empty">Digital projects will appear here as the collection grows.</p>
+        <!-- Add links to your individual HTML project files here. -->
+      </nav>
+      <a class="sheet-bottom" href="#workbench">← RETURN TO THE BENCH</a>
+    </div>
+  </section>
+  <section class="project-sheet" id="timber" aria-labelledby="timber-title">
+    <a class="sheet-backdrop" href="#workbench" aria-label="Close Timber projects"></a>
+    <div class="sheet-paper">
+      <a href="#workbench" class="sheet-close" aria-label="Close Timber projects">×</a>
+      <p class="sheet-eyebrow">FROM THE WORKBENCH / 02</p>
+      <h2 id="timber-title">Timber</h2>
+      <p class="sheet-subtitle">Select a piece to explore.</p>
+      <nav class="sheet-list" aria-label="Timber projects">
+        <p class="sheet-empty">Timber projects will appear here as the collection grows.</p>
+        <!-- Add links to your individual HTML project files here. -->
+      </nav>
+      <a class="sheet-bottom" href="#workbench">← RETURN TO THE BENCH</a>
+    </div>
+  </section>
+  <section class="project-sheet" id="metal" aria-labelledby="metal-title">
+    <a class="sheet-backdrop" href="#workbench" aria-label="Close Metal projects"></a>
+    <div class="sheet-paper">
+      <a href="#workbench" class="sheet-close" aria-label="Close Metal projects">×</a>
+      <p class="sheet-eyebrow">FROM THE WORKBENCH / 03</p>
+      <h2 id="metal-title">Metal</h2>
+      <p class="sheet-subtitle">Select a piece to explore.</p>
+      <nav class="sheet-list" aria-label="Metal projects">
+        <!-- METAL / PROJECT 01: hover preview uses assets/projects/unearthed-sculptural-entrance/hand1.jpeg -->
+        <a class="project-entry" href="projects/unearthed-sculptural-entrance.html">
+          <span class="number">01</span><span class="name">Unearthed Sculptural Entrance</span><span class="arrow" aria-hidden="true">↗</span>
+          <span class="project-peek" aria-hidden="true">
+            <span class="peek-image peek-unearthed"></span>
+            <span class="peek-caption">01 / METAL</span>
+            <strong>Unearthed Sculptural Entrance</strong>
+          </span>
+          <span class="mobile-preview" aria-hidden="true"><span class="mobile-preview-image peek-unearthed"></span></span>
+        </a>
+        <!-- NEW METAL PROJECTS: duplicate the project-entry link above, then change the page URL, title, number and preview image class. -->
+      </nav>
+      <a class="sheet-bottom" href="#workbench">← RETURN TO THE BENCH</a>
+    </div>
+  </section>
+  <section class="project-sheet" id="design" aria-labelledby="design-title">
+    <a class="sheet-backdrop" href="#workbench" aria-label="Close Design projects"></a>
+    <div class="sheet-paper">
+      <a href="#workbench" class="sheet-close" aria-label="Close Design projects">×</a>
+      <p class="sheet-eyebrow">FROM THE WORKBENCH / 04</p>
+      <h2 id="design-title">Design</h2>
+      <p class="sheet-subtitle">Select a piece to explore.</p>
+      <nav class="sheet-list" aria-label="Design projects">
+        <p class="sheet-empty">Design projects will appear here as the collection grows.</p>
+        <!-- Add links to your individual HTML project files here. -->
+      </nav>
+      <a class="sheet-bottom" href="#workbench">← RETURN TO THE BENCH</a>
+    </div>
+  </section>
+  <section class="project-sheet" id="experiments" aria-labelledby="experiments-title">
+    <a class="sheet-backdrop" href="#workbench" aria-label="Close Experiments projects"></a>
+    <div class="sheet-paper">
+      <a href="#workbench" class="sheet-close" aria-label="Close Experiments projects">×</a>
+      <p class="sheet-eyebrow">FROM THE WORKBENCH / 05</p>
+      <h2 id="experiments-title">Experiments</h2>
+      <p class="sheet-subtitle">Select a piece to explore.</p>
+      <nav class="sheet-list" aria-label="Experiments projects">
+        <p class="sheet-empty">Experiments projects will appear here as the collection grows.</p>
+        <!-- Add links to your individual HTML project files here. -->
+      </nav>
+      <a class="sheet-bottom" href="#workbench">← RETURN TO THE BENCH</a>
+    </div>
+  </section>
+</body>
+</html>
