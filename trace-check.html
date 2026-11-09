@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Workbench Trace Check — Will McCoubrie</title>
+<link rel="stylesheet" href="styles.css" />
+<style>
+  body.trace-check-page { margin:0; background:#1d1712; color:#f2ede4; font-family:Arial, Helvetica, sans-serif; }
+  .trace-audit-wrap { max-width:1720px; margin:auto; padding:clamp(12px,2.5vw,30px); box-sizing:border-box; }
+  .trace-audit-head { display:flex; flex-wrap:wrap; gap:20px; justify-content:space-between; align-items:flex-end; margin-bottom:22px; }
+  .trace-audit-head h1 { margin:0; font:400 clamp(2rem,4.3vw,4.7rem)/1 Georgia,serif; letter-spacing:-.05em; }
+  .trace-audit-head p { margin:10px 0 0; max-width:850px; color:#d9cfbe; line-height:1.6; }
+  .trace-audit-link { color:#e0b47a; text-decoration:none; border:1px solid #7f674f; padding:12px 14px; }
+  .trace-audit-link:hover { background:#2e241c; }
+  .trace-figure { position:relative; margin:0; box-shadow:0 0 0 1px rgba(255,255,255,.08),0 16px 50px rgba(0,0,0,.35); }
+  .trace-figure img { width:100%; height:auto; display:block; }
+  .trace-figure svg { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; }
+  .trace-figure .bench-trace { opacity:1!important; fill:rgba(175,129,80,.06)!important; stroke:#f0c78e!important; stroke-width:3; filter:none; }
+  .trace-tag { fill:#24362b; stroke:#f0c78e; stroke-width:2; }
+  .trace-num { font:700 18px Arial,sans-serif; fill:#f5eee3; }
+  .trace-note { font-size:.85rem; color:#c2b8a7; line-height:1.5; margin:13px 0 25px; }
+  .trace-score-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+  .trace-card { padding:20px; background:#efe6d8; color:#292a26; border-left:3px solid #b7844c; }
+  .trace-category { font:700 .7rem Arial,sans-serif; color:#91683f; letter-spacing:.11em; text-transform:uppercase; }
+  .trace-card h2 { font:400 1.65rem Georgia,serif; margin:8px 0; }
+  .trace-card p { line-height:1.5; min-height:4.6em; color:#4a463e; }
+  .trace-card label { display:block; font-weight:700; font-size:.78rem; margin:13px 0 7px; }
+  .trace-card select { width:100%; padding:10px; font-size:1rem; background:white; border:1px solid #b6a68c; }
+  @media(max-width:900px) { .trace-score-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+  @media(max-width:600px) { .trace-score-grid { grid-template-columns:1fr; } .trace-card p { min-height:0; } }
+</style>
+</head>
+<body class="trace-check-page">
+<div class="trace-audit-wrap">
+ <div class="trace-audit-head">
+  <div><h1>Workbench Trace Check</h1><p>Visually review the outlines at full size. These six paths are the same ones used on the live Workbench. Each line is straight (except the circular Petri dish), and the layered material stack is deliberately simplified.</p></div>
+  <a class="trace-audit-link" href="workbench.html">Back to Workbench</a>
+ </div>
+ <figure class="trace-figure">
+  <img src="assets/bench-large.webp" width="1672" height="941" alt="Original workbench photograph with all six object outlines" />
+  <svg viewBox="0 0 1672 941" preserveAspectRatio="none" aria-hidden="true">
+   <path class="bench-trace" d="M 48 103 L 660 7 L 724 373 L 81 484 Z"></path>
+<path class="bench-trace" d="M 928 40 L 875 190 L 877 241 L 1290 358 L 1348 155 Z"></path>
+<path class="bench-trace" d="M 196 483 L 120 715 L 494 816 L 565 564 Z"></path>
+<path class="bench-trace" d="M 1421 366 L 1480 413 L 1499 646 L 1398 625 L 1365 759 L 1370 714 L 1141 725 L 1131 653 L 1082 653 L 1083 420 L 1168 418 L 1174 386 Z"></path>
+<circle class="bench-trace" cx="807" cy="705" r="152"></circle>
+<path class="bench-trace" d="M 1398 625 L 1665 691 L 1612 941 L 1396 941 L 1300 909 Z"></path>
+<g transform="translate(365 118)"><circle class="trace-tag" r="21"></circle><text class="trace-num" text-anchor="middle" dominant-baseline="central">1</text></g>
+<g transform="translate(1095 120)"><circle class="trace-tag" r="21"></circle><text class="trace-num" text-anchor="middle" dominant-baseline="central">2</text></g>
+<g transform="translate(305 578)"><circle class="trace-tag" r="21"></circle><text class="trace-num" text-anchor="middle" dominant-baseline="central">3</text></g>
+<g transform="translate(1250 460)"><circle class="trace-tag" r="21"></circle><text class="trace-num" text-anchor="middle" dominant-baseline="central">4</text></g>
+<g transform="translate(795 579)"><circle class="trace-tag" r="21"></circle><text class="trace-num" text-anchor="middle" dominant-baseline="central">5</text></g>
+<g transform="translate(1480 685)"><circle class="trace-tag" r="21"></circle><text class="trace-num" text-anchor="middle" dominant-baseline="central">6</text></g>
+  </svg>
+ </figure>
+ <p class="trace-note">The numbers identify the objects below. Scores are deliberately blank until you inspect them; the previous 9.8/10 claims were not independently measured. This is a CSS-only visual checklist, not an automated computer-vision score.</p>
+ <section class="trace-score-grid" aria-label="Manual outline accuracy scorecard">
+  <article class="trace-card"><div class="trace-category">01 · Digital</div><h2>Cutting mat</h2><p>Check the top slanted edge, right-hand edge, bottom edge and the partly obscured left edge.</p><label for="fit-1">Your visual fit score (0–10)</label><select id="fit-1" name="fit-1"><option selected value="">Not reviewed</option><option value="0">0 / 10</option><option value="1">1 / 10</option><option value="2">2 / 10</option><option value="3">3 / 10</option><option value="4">4 / 10</option><option value="5">5 / 10</option><option value="6">6 / 10</option><option value="7">7 / 10</option><option value="8">8 / 10</option><option value="9">9 / 10</option><option value="10">10 / 10</option></select></article>
+<article class="trace-card"><div class="trace-category">02 · Timber</div><h2>Timber block</h2><p>Check the block perimeter, including the short side that gives it thickness.</p><label for="fit-2">Your visual fit score (0–10)</label><select id="fit-2" name="fit-2"><option selected value="">Not reviewed</option><option value="0">0 / 10</option><option value="1">1 / 10</option><option value="2">2 / 10</option><option value="3">3 / 10</option><option value="4">4 / 10</option><option value="5">5 / 10</option><option value="6">6 / 10</option><option value="7">7 / 10</option><option value="8">8 / 10</option><option value="9">9 / 10</option><option value="10">10 / 10</option></select></article>
+<article class="trace-card"><div class="trace-category">03 · Metal</div><h2>Steel plate</h2><p>Check all four visible outer corners. The previous outline was displaced and cut through the metal.</p><label for="fit-3">Your visual fit score (0–10)</label><select id="fit-3" name="fit-3"><option selected value="">Not reviewed</option><option value="0">0 / 10</option><option value="1">1 / 10</option><option value="2">2 / 10</option><option value="3">3 / 10</option><option value="4">4 / 10</option><option value="5">5 / 10</option><option value="6">6 / 10</option><option value="7">7 / 10</option><option value="8">8 / 10</option><option value="9">9 / 10</option><option value="10">10 / 10</option></select></article>
+<article class="trace-card"><div class="trace-category">04 · Design</div><h2>Material swatch stack</h2><p>This object is layered. Check that the outline follows the overall visible stack without tracing every irregular sheet.</p><label for="fit-4">Your visual fit score (0–10)</label><select id="fit-4" name="fit-4"><option selected value="">Not reviewed</option><option value="0">0 / 10</option><option value="1">1 / 10</option><option value="2">2 / 10</option><option value="3">3 / 10</option><option value="4">4 / 10</option><option value="5">5 / 10</option><option value="6">6 / 10</option><option value="7">7 / 10</option><option value="8">8 / 10</option><option value="9">9 / 10</option><option value="10">10 / 10</option></select></article>
+<article class="trace-card"><div class="trace-category">05 · Experiments</div><h2>Petri dish</h2><p>Check that the circle follows the outside glass rim, including the bottom edge.</p><label for="fit-5">Your visual fit score (0–10)</label><select id="fit-5" name="fit-5"><option selected value="">Not reviewed</option><option value="0">0 / 10</option><option value="1">1 / 10</option><option value="2">2 / 10</option><option value="3">3 / 10</option><option value="4">4 / 10</option><option value="5">5 / 10</option><option value="6">6 / 10</option><option value="7">7 / 10</option><option value="8">8 / 10</option><option value="9">9 / 10</option><option value="10">10 / 10</option></select></article>
+<article class="trace-card"><div class="trace-category">06 · The Maker</div><h2>Photographic print</h2><p>Check the top, side and bottom edges. The bottom-right corner extends beyond the photograph frame.</p><label for="fit-6">Your visual fit score (0–10)</label><select id="fit-6" name="fit-6"><option selected value="">Not reviewed</option><option value="0">0 / 10</option><option value="1">1 / 10</option><option value="2">2 / 10</option><option value="3">3 / 10</option><option value="4">4 / 10</option><option value="5">5 / 10</option><option value="6">6 / 10</option><option value="7">7 / 10</option><option value="8">8 / 10</option><option value="9">9 / 10</option><option value="10">10 / 10</option></select></article>
+ </section>
+</div>
+</body>
+</html>
