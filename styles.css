@@ -31,7 +31,7 @@ button{ font: inherit; }
 .entrance-enter:hover .entrance-orbit, .entrance-enter:focus-visible .entrance-orbit{ transform: rotate(13deg); }
 .entrance-enter-disc{ background: #304b39; border: 2px solid #c59a65; border-radius: 50%; width: 130px; height: 130px; display: flex; justify-content: center; align-items: center; gap: 7px; box-shadow: 0 10px 35px #0007; color: #f7f4ec; font-size: 14px; font-weight: 700; letter-spacing: .1em; transition: background .25s ease, box-shadow .25s ease; }
 .entrance-enter:hover .entrance-enter-disc, .entrance-enter:focus-visible .entrance-enter-disc{ background: #3d6048; box-shadow: 0 13px 36px #0009; }
-.entrance-enter-disc span{ color: #dcb88e; font-size: 22px; font-weight: 400; }
+.entrance-enter-disc span{ color: #dcb88e; font-size: 20px; font-weight: 400; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-variant-emoji: text; line-height: 1; display: inline-block; }
 
 /* Workbench: the image and the hit targets live inside EXACTLY the same aspect-ratio stage. */
 .bench-page{ background: #261b15; overflow: hidden; }
@@ -49,7 +49,7 @@ button{ font: inherit; }
 .hotspot-maker{ left: 78.0%; top: 68.3%; width: 21.0%; height: 28.3%; }
 /* Minimal paper-ish labels. The photograph remains untouched. */
 .hotspot-label{ position: absolute; bottom: 0; left: 11%; background: rgba(37,45,35,.8); color: #eee9dd; border-left: 2px solid var(--bronze); box-shadow: 0 4px 17px #0005; padding: 8px 12px 9px; font-size: clamp(10px,1vw,15px); letter-spacing: .10em; text-transform: uppercase; font-weight: 700; white-space: nowrap; transition: transform .2s ease, background .2s ease, box-shadow .2s ease; }
-.hotspot-label span{ color: #d5ad7c; margin-left: 7px; font-size: 1.1em; font-weight: 400; }
+.hotspot-label span{ color: #d5ad7c; margin-left: 7px; font-size: 1.05em; font-weight: 400; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-variant-emoji: text; line-height: 1; display: inline-block; }
 .hotspot:hover .hotspot-label, .hotspot:focus-visible .hotspot-label{ transform: translateY(-5px); background: #304b39; box-shadow: 0 8px 23px #0008; }
 .hotspot-dot{ position: absolute; top: 44%; left: 50%; width: clamp(27px, 3.2vw, 46px); aspect-ratio: 1; border: 1px solid #e8dcc8d9; border-radius: 50%; background: #28332c8a; box-shadow: 0 2px 15px #1c140f77; color: #fff1da; display: grid; place-items: center; font-weight: 300; font-size: clamp(18px,2.2vw,29px); line-height: 1; opacity: .85; transform: translate(-50%,-50%); transition: transform .23s ease, background .23s ease, box-shadow .23s ease; }
 .hotspot:hover .hotspot-dot, .hotspot:focus-visible .hotspot-dot{ transform: translate(-50%,-50%) scale(1.18); background: #94653bcf; box-shadow: 0 0 0 11px #d7ae7627, 0 6px 18px #0008; }
@@ -80,16 +80,16 @@ button{ font: inherit; }
 .sheet-list a:hover, .sheet-list a:focus-visible{ color: #957044; padding-left: 7px; }
 .sheet-list .number{ width: 28px; color: #967650; font-size: 11px; letter-spacing: .04em; }
 .sheet-list .name{ flex: 1; font: 500 18px Georgia,serif; }
-.sheet-list .arrow{ font-size: 18px; }
+.sheet-list .arrow{ font-size: 16px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-variant-emoji: text; line-height: 1; display: inline-block; }
 .sheet-bottom{ display: block; color: #a1774b; margin: 29px 0 0; letter-spacing: .08em; }
 .bench-hint{ display: none; position: fixed; z-index: 6; bottom: 18px; left: 50%; transform: translateX(-50%); background: rgba(40,43,39,.86); border: 1px solid #a07b55; color: #eee5d6; padding: 9px 13px; border-radius: 40px; white-space: nowrap; font-size: 10px; font-weight: 700; letter-spacing: .13em; pointer-events: none; transition: opacity .4s; }
-.bench-hint span{ color: #d8b38b; margin-left: 6px; font-size: 15px; }
+.bench-hint span{ color: #d8b38b; margin-left: 6px; font-size: 14px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-variant-emoji: text; line-height: 1; display: inline-block; }
 .bench-hint.is-hidden{ opacity: 0; }
 
 /* An individual project is a sheet of paper laid over the same workshop surface. */
 .detail-page{ min-height: 100svh; background: #493326 url("assets/bench-medium.webp") center / cover fixed; padding: clamp(16px,4vw,65px) 15px; color: var(--ink); }
 .detail-paper{ width: min(1100px,100%); min-height: calc(100svh - 100px); margin: auto; background: var(--paper); padding: clamp(26px,5.5vw,85px); box-shadow: 0 13px 50px #080605a9; }
-.back-link{ text-decoration: none; display: inline-block; color: #526b54; font-size: 12px; font-weight: 700; letter-spacing: .13em; }
+.back-link{ text-decoration: none; display: inline-block; color: #526b54; font-size: 12px; font-weight: 700; letter-spacing: .13em; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-variant-emoji: text; }
 .back-link:hover{ color: var(--bronze); }
 .back-link-bottom{ margin-top: 55px; padding-top: 18px; border-top: 1px solid #d4c9b7; display: block; }
 .eyebrow{ color: #a77b4c; margin: 0 0 20px; }
@@ -111,7 +111,7 @@ button{ font: inherit; }
 .contact-group{ margin-top: 40px; }
 .contact-group>div{ padding: 13px 0; display: flex; justify-content: space-between; gap: 10px; border-bottom: 1px solid #d5cbb9; font-size: 14px; }
 .contact-group>div>span:first-child{ font-weight: 700; }
-.contact-group a{ text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.contact-group a{ text-decoration-thickness: 1px; text-underline-offset: 3px; font-variant-emoji: text; }
 .contact-group a[href^="mailto:"]{ overflow-wrap: anywhere; text-align: right; }
 .muted{ color: #7a8178; }
 
@@ -372,7 +372,7 @@ button{ font: inherit; }
 .bench-page .gallery-card-info{ display:flex;gap:12px;align-items:baseline;position:relative;padding:13px 15px 4px;min-width:0; }
 .bench-page .gallery-index{ flex:0 0 auto; font:700 10px/1.4 Arial,sans-serif; letter-spacing:.11em; color:#986c3b; }
 .bench-page .gallery-card-name{ font:400 clamp(17px,2.15vw,25px)/1.1 Georgia,serif; letter-spacing:-.035em; min-width:0; }
-.bench-page .gallery-arrow{ margin-left:auto;font-size:22px;color:#a97a44; }
+.bench-page .gallery-arrow{ margin-left:auto;font-size:20px;color:#a97a44;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-variant-emoji:text;font-style:normal;line-height:1;display:inline-block; }
 .bench-page .gallery-card-meta{ padding:0 15px 14px 15px; margin-left:32px; font:400 11px/1.4 Arial,sans-serif; color:#6f7166; letter-spacing:.025em; }
 .bench-page .gallery-image-empty{ position:relative;background:linear-gradient(145deg,#d6d0c2,#e8e2d6);border-bottom:1px solid #ded4c4;display:grid;place-items:center; }
 .bench-page .gallery-image-empty::before{ content:"";width:72%;height:70%;border:1px solid #c6bdad;position:absolute; }
